@@ -22,9 +22,9 @@ export default function Login() {
                 localStorage.setItem('token', res.data.data.token);
                 Swal.fire({
                     icon: "success",
-                    title: res.data.message,
+                    title: `Enjoy your journey with us ylly bttss.. :D`,
                     showConfirmButton: false,
-                    timer: 1500
+                    timer: 1800
                 });
                 navigate('/home');
             }
@@ -32,7 +32,7 @@ export default function Login() {
         }).catch((err) => {
             Swal.fire({
                 icon: "error",
-                title: err.response.data.message,
+                title: `M tzbot El klam y negm .. :D`,
                 showConfirmButton: true,
             });
             // console.log(err.response.data.status)
@@ -51,7 +51,7 @@ export default function Login() {
                                 <div className="card-body">
 
                                     <div className="pt-4 pb-2">
-                                        <h5 className="card-title text-center pb-0 fs-4">Login to Your Account</h5>
+                                        <h5 className="card-title text-center pb-0 fs-4">Login to S&Z System</h5>
                                         <p className="text-center small">Enter your username & password to login</p>
                                     </div>
 
